@@ -28,10 +28,10 @@ npm start
 └── README.md      # You're reading it!
 
 ## Tech Stack
-- **Backend**: Node.js + Express.js
-- **Frontend**: Vanilla HTML/CSS/JavaScript
-- **Styling**: Pure CSS (no frameworks)
-- **Storage**: In-memory (persists during session)
+- Backend: Node.js + Express.js
+- Frontend: Vanilla HTML/CSS/JavaScript
+- Styling: Pure CSS (no frameworks)
+- Storage: In-memory (persists during session)
 
 ## API Endpoints
 GET    /api/tasks           # List all tasks
