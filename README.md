@@ -21,12 +21,6 @@ npm run dev
 # Production
 npm start
 
-##  Project Structure
-├── index.html     # Frontend (Vanilla JS + CSS)
-├── server.js      # Express API + Static Server
-├── package.json   # Dependencies & Scripts
-└── README.md      # You're reading it!
-
 ## Tech Stack
 - Backend: Node.js + Express.js
 - Frontend: Vanilla HTML/CSS/JavaScript
