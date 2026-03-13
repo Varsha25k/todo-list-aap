@@ -3,7 +3,7 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
+const DEFAULT_PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -65,4 +65,17 @@ app.delete('/api/tasks/clear/completed', (req, res) => {
 
 app.get('*', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 
-app.listen(PORT, () => console.log(`✅ Server running → http://localhost:${PORT}`));
+function startServer(port) {
+  const server = app.listen(port, () => console.log(`✅ Server running → http://localhost:${port}`));
+  server.on('error', err => {
+    if (err.code === 'EADDRINUSE') {
+      console.warn(`⚠️ Port ${port} already in use, trying ${port + 1}...`);
+      setTimeout(() => startServer(port + 1), 300);
+    } else {
+      throw err;
+    }
+  });
+}
+
+startServer(DEFAULT_PORT);
+
