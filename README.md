@@ -1,98 +1,52 @@
-# TaskFlow – To-Do List Application
+# TaskFlow – To-Do List App
 
-TaskFlow is a modern and responsive To-Do List web application designed to help users efficiently manage their daily tasks. The application supports full CRUD operations, allowing users to create, update, and delete tasks easily while tracking their progress.
-
----
+TaskFlow is a simple and responsive To-Do List web application that helps users manage daily tasks efficiently.
 
 ## Features
-
-- Full CRUD operations (Create, Read, Update, Delete)
-- Modern responsive user interface
-- Dark / Light mode support
-- Real-time task progress tracking
-- Smart search and filtering (All, Pending, Completed, Overdue)
-- Task priority levels (High, Medium, Low)
-- Task categories for better organization
-- Due dates with overdue alerts
-- Bulk clear completed tasks
-- Mobile-friendly design with smooth UI interactions
-
----
+- Create, update, and delete tasks
+- Task priority (High, Medium, Low)
+- Task categories
+- Due dates with alerts
+- Search and filter tasks
+- Dark / Light mode
+- Responsive design
 
 ## Tech Stack
+**Frontend:** HTML, CSS, JavaScript  
+**Backend:** Node.js, Express.js  
+**Storage:** In-memory storage
 
-**Frontend**
-- HTML
-- CSS
-- JavaScript
+## Installation
 
-**Backend**
-- Node.js
-- Express.js
-
-**Storage**
-- In-memory data storage (data persists during the session)
-
----
-
-## Installation and Setup
-
-Clone the repository:
+Clone the repository
 
 ```bash
 git clone https://github.com/Varsha25k/todo-list-app.git
+```
+
+Go to the project folder
+
+```bash
 cd todo-list-app
 ```
 
-Install dependencies:
+Install dependencies
 
 ```bash
 npm install
 ```
 
-Run the application in development mode:
-
-```bash
-npm run dev
-```
-
-Run the application in production mode:
+Run the application
 
 ```bash
 npm start
 ```
 
-The application will start on:
+Open in browser
 
 ```
 http://localhost:3000
 ```
-
----
-
-## API Endpoints
-
-| Method | Endpoint | Description |
-|------|------|------|
-| GET | /api/tasks | Retrieve all tasks |
-| POST | /api/tasks | Create a new task |
-| PUT | /api/tasks/:id | Update an existing task |
-| DELETE | /api/tasks/:id | Delete a task |
-| DELETE | /api/tasks/clear/completed | Remove all completed tasks |
-
----
-
-## Project Purpose
-
-This project was created as part of an internship task to demonstrate practical understanding of:
-
-- Full stack web development
-- REST API creation
-- Frontend and backend integration
-- Task management logic
-
----
-
 
 LinkedIn  
 https://www.linkedin.com/in/varsha-keswani
