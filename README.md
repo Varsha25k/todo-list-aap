@@ -28,14 +28,11 @@ npm start
 - Storage: In-memory (persists during session)
 
 ## API Endpoints
-GET    /api/tasks           # List all tasks
-POST   /api/tasks           # Create new task
+GET     /api/tasks           # List all tasks
+POST    /api/tasks           # Create new task
 PUT    /api/tasks/:id       # Update task
 DELETE /api/tasks/:id       # Delete task
 DELETE /api/tasks/clear/completed  # Bulk clear
-
-## How to View
-Visit the live todo-list-app here: [https://Varsha-todo-list-app-url.com]()
 
 ## Connect With Me
  LinkedIn: https://www.linkedin.com/in/varsha-keswani
