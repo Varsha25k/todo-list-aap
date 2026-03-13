@@ -11,7 +11,7 @@
 -  Bulk clear completed tasks
 
 ## Quick Start
-```bash
+
 # Install
 npm install
 
